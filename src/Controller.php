@@ -8,6 +8,6 @@ class Controller
 {
     public function __invoke(Request $request)
     {
-        $this->boom();
+        require "non_existing_file.php";
     }
 }

@@ -8,8 +8,7 @@ Required:
 
  - Docker Compose 1.14 or newer
  - Docker 17.06 or newer
- - a valid new relic license for the PHP extension
- - a Sentry account
+ - a Sentry DSN
 
 ### Reproduction steps (OSX)
 
@@ -19,9 +18,6 @@ Create a file named `docker-compose.override.yml` with the following contents:
 version: '3.3'
 services:
   php:
-    build:
-      args:
-        - nr_license_key=YOUR-LICENSE-KEY
     environment:
       - SENTRY_DSN=YOUR-SENTRY-DSN
 ```
@@ -48,9 +44,6 @@ Create a file named `docker-compose.override.yml` with the following contents:
 version: '3.3'
 services:
   php:
-    build:
-      args:
-        - nr_license_key=YOUR-LICENSE-KEY
     environment:
       - SENTRY_DSN=YOUR-SENTRY-DSN
     user: "$HUID:$HGID"
