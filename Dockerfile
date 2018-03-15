@@ -11,7 +11,6 @@ RUN curl -sS "http://download.newrelic.com/php_agent/release/newrelic-php5-${nr_
  && cd newrelic-php5-${nr_version} \
  && sed -i -e 's/> \${phpi} 2/2/' ./newrelic-install \
  && NR_INSTALL_SILENT=false ./newrelic-install install \
- && chown 501:20 -R /var/log/newrelic \
  && printf "\n\nnewrelic.enabled = true\n\
 newrelic.framework = symfony2\n\
 newrelic.license = $nr_license_key\n\
