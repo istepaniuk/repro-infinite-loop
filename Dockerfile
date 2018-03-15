@@ -1,5 +1,5 @@
-FROM php:7.0-fpm-alpine
+FROM zaherg/php-7.1-xdebug-alpine
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-WORKDIR /opt/app
+WORKDIR /srv

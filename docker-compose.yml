@@ -4,7 +4,7 @@ services:
 
   nginx:
     image: nginx:mainline-alpine
-    container_name: loop-nginx
+    container_name: loop-symfony-only-nginx
     links:
       - php
       - php:fcgi
@@ -18,7 +18,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: loop-fpm
+    container_name: loop-symfony-only-fpm
     working_dir: /srv
     volumes:
       - .:/srv
