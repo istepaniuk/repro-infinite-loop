@@ -28,6 +28,9 @@ Reproduction steps:
 ``` bash
 docker-compose up --build -d
 
+# install deps
+docker-compose exec php composer install 
+
 # first request will succeed
 curl localhost:8000
 
