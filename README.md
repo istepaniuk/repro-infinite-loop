@@ -17,7 +17,7 @@ Required:
 Create a file named `docker-compose.override.yml` with the following contents:
 
 ``` yaml
-version: '3.3'
+version: '3.0'
 services:
   php:
     environment:
@@ -43,7 +43,7 @@ curl localhost:8000
 Create a file named `docker-compose.override.yml` with the following contents:
 
 ``` yaml
-version: '3.3'
+version: '3.0'
 services:
   php:
     environment:
