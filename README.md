@@ -8,6 +8,7 @@ Required:
 
  - a (recent) working docker/docker-compose setup
  - a valid new relic license for the PHP extension
+ - a sentry account
 
 Create a file named `docker-compose.override.yml` with the following contents:
 
