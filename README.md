@@ -6,9 +6,10 @@ This repository aims to reproduce the following issue:
 
 Required:
 
- - a (recent) working docker/docker-compose setup
+ - Docker Compose 1.14 or newer
+ - Docker 17.06 or newer
  - a valid new relic license for the PHP extension
- - a sentry account
+ - a Sentry account
 
 Create a file named `docker-compose.override.yml` with the following contents:
 
