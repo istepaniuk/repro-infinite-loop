@@ -16,4 +16,7 @@ newrelic.framework = symfony2\n\
 newrelic.license = $nr_license_key\n\
 newrelic.appname = $nr_app_name\n" >> /usr/local/etc/php/conf.d/newrelic.ini
 
+RUN mkdir -p /var/log/newrelic \
+ && chmod 777 /var/log/newrelic
+
 WORKDIR /opt/app
