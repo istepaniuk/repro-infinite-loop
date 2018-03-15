@@ -1,8 +1,10 @@
 ## Repro case for infite-loop in exception handlers
 
-This repository aims to reproduce the following issue:
+This repository aims to reproduce the issue described in:
+ * https://github.com/symfony/symfony/issues/26438
+ * https://github.com/getsentry/sentry-php/issues/552
+ * https://github.com/getsentry/sentry-symfony/issues/119
 
-![stacktrace-timeline.png](stacktrace-timeline.png)
 
 Required:
 
