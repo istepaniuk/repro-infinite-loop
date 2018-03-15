@@ -1,0 +1,20 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        },
+        "classmap": [
+            "app/Kernel.php"
+        ]
+    },
+    "require": {
+        "symfony/symfony": "^3.4",
+        "sentry/sentry": "^1.8",
+        "sentry/sentry-symfony": "^1.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.0.27"
+        }
+    }
+}

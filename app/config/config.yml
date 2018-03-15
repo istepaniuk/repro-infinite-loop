@@ -1,0 +1,9 @@
+framework:
+    secret: 'not-so-secret'
+    router:
+        resource: '%kernel.root_dir%/config/routing.yml'
+
+sentry:
+    dsn: '%env(SENTRY_DSN)%'
+    options:
+        release: 'infinite-loop'
