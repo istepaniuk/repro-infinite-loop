@@ -18,4 +18,7 @@ newrelic.appname = $nr_app_name\n" >> /usr/local/etc/php/conf.d/newrelic.ini \
  && chmod 777 . -R \
  && chmod 777 /var/log/newrelic
 
+RUN mkdir -p /var/log/newrelic \
+ && chmod 777 /var/log/newrelic
+
 WORKDIR /opt/app
