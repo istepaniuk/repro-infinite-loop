@@ -29,11 +29,9 @@ services:
 docker-compose up --build -d
 docker-compose exec php composer install
 
-# first request will succeed (an error will be shown)
-curl localhost:8000
 
-# subsequent requests will get stuck in an infinite loop
-curl localhost:8000
+# requests will get stuck in an infinite loop
+curl http://localhost:8000
 ```
 
 ### Reproduction steps (Linux)
